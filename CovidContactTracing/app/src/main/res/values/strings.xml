@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoCovid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bullet">\u0020\u0020\u2022\u0020\u0020</string>
+    <string name="symptoms_t1">COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</string>
+    <string name="symptoms_t2_1">fever</string>
+    <string name="symptoms_t2_2">dry cough</string>
+    <string name="symptoms_t2_3">tiredness</string>
+    <string name="symptoms_t3_1">aches and pains</string>
+    <string name="symptoms_t3_2">sore throat</string>
+    <string name="symptoms_t3_3">diarrhoea</string>
+    <string name="symptoms_t3_4">conjunctivitis</string>
+    <string name="symptoms_t3_5">loss of taste or smell</string>
+    <string name="symptoms_t4_1">difficulty breathing</string>
+    <string name="symptoms_t4_2">chest pain or pressure</string>
+    <string name="symptoms_t4_3">loss of speech or movement</string>
+    <string name="symptoms_t4_4">conjunctivitis</string>
+    <string name="symptoms_t5_1">Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.</string>
+    <string name="symptoms_t5_2">People with mild symptoms who are otherwise healthy should manage their symptoms at home.</string>
+    <string name="symptoms_t5_3">On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.</string>
+
+    <string name="prevent_t1">Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local health authority.</string>
+    <string name="prevent_t2_1">Clean your hands often. Use soap and water, or an alcohol-based hand rub.</string>
+    <string name="prevent_t2_2">Maintain a safe distance from anyone who is coughing or sneezing.</string>
+    <string name="prevent_t2_3">Wear a mask when physical distancing is not possible.</string>
+    <string name="prevent_t2_4">Don’t touch your eyes, nose or mouth.</string>
+    <string name="prevent_t2_5">Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</string>
+    <string name="prevent_t2_6">Stay home if you feel unwell.</string>
+    <string name="prevent_t2_7">If you have a fever, cough and difficulty breathing, seek medical attention.</string>
+    <string name="prevention_tips_message">This is some simple prevention tips.</string>
+
+    <string name="handwashing_t1">Wash hands with soap and water for at least 20 seconds. Use the cleanest water possible. Use an alcohol-based hand rub that contains 60% alcohol if soap and water are not available.</string>
+    <string name="handwashing_t2_1">1. Wet hands with water.</string>
+    <string name="handwashing_t2_2">2. Apply enough soap to cover all hand surfaces.</string>
+    <string name="handwashing_t2_3">3. Rub hands together and scrub everywhere.</string>
+    <string name="handwashing_t2_4">4. Wash the front and back of your hands, in between your fingers, and under your nails.</string>
+    <string name="handwashing_t2_5">5. Rinse hands with water.</string>
+    <string name="handwashing_t2_6">6. Dry hands completely using a single-use towel or air dry.</string>
+
+    <string name="faq_q1">What is COVID-19?</string>
+    <string name="faq_a1">COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.  WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China.</string>
+    <string name="faq_q2">What happens to people who get COVID-19?</string>
+    <string name="faq_a2">Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.\n\nComplications leading to death may include respiratory failure, acute respiratory distress syndrome (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the heart, liver or kidneys.\n\nIn rare situations, children can develop a severe inflammatory syndrome a few weeks after infection.</string>
+    <string name="faq_q3">Who is most at risk of severe illness from COVID-19?</string>
+    <string name="faq_a3">People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness.\n\nHowever, anyone can get sick with COVID-19 and become seriously ill or die at any age.</string>
+    <string name="faq_q4">Are there any long-term effects of COVID-19?</string>
+    <string name="faq_a4">Some people who have had COVID-19, whether they have needed hospitalization or not, continue to experience symptoms, including fatigue, respiratory and neurological symptoms.\n\nWHO is working with our Global Technical Network for Clinical Management of COVID-19, researchers and patient groups around the world to design and carry out studies of patients beyond the initial acute course of illness to understand the proportion of patients who have long term effects, how long they persist, and why they occur.  These studies will be used to develop further guidance for patient care.</string>
+    <string name="faq_q5">I want to find out if I had COVID-19 in the past, what test could I take?</string>
+    <string name="faq_a5">Antibody tests can tell us whether someone has had an infection in the past, even if they have not had symptoms. Also known as serological tests and usually done on a blood sample, these tests detect antibodies produced in response to an infection.\n\nIn most people, antibodies start to develop after days to weeks and can indicate if a person has had past infection. Antibody tests cannot be used to diagnose COVID-19 in the early stages of infection or disease but can indicate whether or not someone has had the disease in the past.</string>
+    <string name="faq_q6">What is the difference between isolation and quarantime?</string>
+    <string name="faq_a6">Both isolation and quarantine are methods of preventing the spread of COVID-19.\n\n<b>Quarantine</b> is used for anyone who is a contact of someone infected with the SARS-CoV-2 virus, which causes COVID-19, whether the infected person has symptoms or not. Quarantine means that you remain separated from others because you have been exposed to the virus and you may be infected and can take place in a designated facility or at home. For COVID-19, this means staying in the facility or at home for 14 days.\n\n<b>Isolation</b> is used for people with COVID-19 symptoms or who have tested positive for the virus. Being in isolation means being separated from other people, ideally in a medically facility where you can receive clinical care.  If isolation in a medical facility is not possible and you are not in a high risk group of developing severe disease, isolation can take place at home. If you have symptoms, you should remain in isolation for at least 10 days plus an additional 3 days without symptoms. If you are infected and do not develop symptoms, you should remain in isolation for 10 days from the time you test positive. </string>
+    <string name="faq_q7">How long does it take to develop symptoms?</string>
+    <string name="faq_a7">The time from exposure to COVID–19 to the moment when symptoms begin is, on average, 5–6 days and can range from 1–14 days. This is why people who have been exposed to the virus are advised to remain at home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available.</string>
+
+    <string name="tab_label1">Updates</string>
+    <string name="tab_label2">States</string>
+    <string name="tab_label3">Global</string>
+
+    <string name="option1">Personal Info</string>
+    <string name="option2">Change Password</string>
+    <string name="option3">Edit Profile Image</string>
+    <string name="option4">Edit Profile Cover</string>
+    <string name="option5">Logout</string>
+
+    <string-array name="states">
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Melaka</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+        <item>Kuala Lumpur</item>
+        <item>Labuan</item>
+        <item>Putrajaya</item>
+    </string-array>
+</resources>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.02"
+                android:text="What you need to know?"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/symptoms_t1"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/zxing_transparent"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="16dp"
+                        android:letterSpacing="0.05"
+                        android:text="Most"
+                        android:textColor="@drawable/radio_text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/zxing_transparent"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="16dp"
+                        android:letterSpacing="0.05"
+                        android:text="Less"
+                        android:textColor="@drawable/radio_text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/zxing_transparent"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="16dp"
+                        android:letterSpacing="0.05"
+                        android:text="Serious"
+                        android:textColor="@drawable/radio_text_color"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/radio_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.02"
+                android:text="Most common symptoms:"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TableLayout
+                android:id="@+id/content_most"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t2_1"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t2_2"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t2_3"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/content_less"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t3_1"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t3_2"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t3_3"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t3_4"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t3_5"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/content_serious"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t4_1"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t4_2"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t4_3"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t4_4"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/h5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.02"
+                android:text="Additional information:"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TableLayout
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="  1.  "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t5_1"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="  2.  "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t5_2"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="  3.  "
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/symptoms_t5_3"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

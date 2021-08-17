@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountryActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CountryActivity">
+
+        <TextView
+            android:id="@+id/tv_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/roboto_bold"
+            android:letterSpacing="0.1"
+            android:text="Country Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="254dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_country_name">
+
+            <ImageView
+                android:id="@+id/iv_country_flag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:stretchColumns="*"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="Population:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_population"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="Confirmed:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_confirmed_cases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="New Confirmed:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_new_confirmed_cases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="Death:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_death"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="New Death:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_new_death"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="Active:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_active"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="Recovered:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_country_recovered"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="Test:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_test"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="One Case Per:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_per_case"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="One Death Per:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_per_death"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="5dp"
+                    android:layout_column="0"
+                    android:text="One Test Per:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_per_test"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textAlignment="textEnd"
+                    android:justificationMode="inter_word"
+                    android:letterSpacing="0.05"
+                    android:text="123,456"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

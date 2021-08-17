@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:text="Check-in at Xiamen University Malaysia"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/roboto_boldcondensed"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="April 27, 2021"
+                android:textColor="@color/my_grey2"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="-"
+                android:textColor="@color/my_grey2"
+                android:layout_toRightOf="@id/date"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:30 PM"
+                android:textColor="@color/my_grey2"
+                android:layout_toRightOf="@+id/space"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/risk"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Low Risk"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/my_grey2" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="Jalan Sunsuria, Bandar Sunsuria, 43900 Sepang, Selangor"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/risk"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/my_grey2" />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:text="03-8800 6800"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:textSize="16sp"
+                android:layout_below="@id/address"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/my_grey2" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                android:layout_margin="16dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/map_xmum"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

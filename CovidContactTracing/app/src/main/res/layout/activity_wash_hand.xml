@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WashHandActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.02"
+                android:text="Handwashing Tips"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/handwashing_t1"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/h2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.02"
+                android:text="Detail Steps:"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/hw2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/handwashing_t2_1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_hw1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:onClick="showWashHandStep1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/handwashing1" />
+
+            <TextView
+                android:id="@+id/hw2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/handwashing_t2_2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_hw2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:onClick="showWashHandStep2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/handwashing2" />
+
+            <TextView
+                android:id="@+id/hw2_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/handwashing_t2_3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_hw3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:onClick="showWashHandStep3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/handwashing3" />
+
+            <TextView
+                android:id="@+id/hw2_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/handwashing_t2_4"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_hw4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:onClick="showWashHandStep4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/handwashing4" />
+
+            <TextView
+                android:id="@+id/hw2_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/handwashing_t2_5"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_hw5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:onClick="showWashHandStep5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/handwashing5" />
+
+            <TextView
+                android:id="@+id/hw2_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/handwashing_t2_6"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_hw6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:onClick="showWashHandStep6"
+                android:scaleType="centerCrop"
+                android:src="@drawable/handwashing6" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

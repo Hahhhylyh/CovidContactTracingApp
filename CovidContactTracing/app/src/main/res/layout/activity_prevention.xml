@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreventionActivity"
+    android:id="@+id/relative_layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.02"
+                android:text="What you need to know?"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:letterSpacing="0.05"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/prevent_t1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_prevention"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/prevention1" />
+
+            <TextView
+                android:id="@+id/h2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:letterSpacing="0.02"
+                android:text="To prevent the spread of COVID-19:"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingEnd="5dp">
+
+                <TableRow
+                    android:id="@+id/tr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/clickable_text_wash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/prevent_t2_1"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/prevent_t2_2"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/clickable_text_mask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/prevent_t2_3"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/prevent_t2_4"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/bullet"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:justificationMode="inter_word"
+                        android:letterSpacing="0.05"
+                        android:lineSpacingExtra="5dp"
+                        android:text="@string/prevent_t2_6"
+                        android:textSize="14sp" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
